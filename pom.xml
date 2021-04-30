@@ -99,11 +99,6 @@
       <version>${aws.version}</version>
     </dependency>
     <dependency>
-      <artifactId>cloud-storage-core</artifactId>
-      <groupId>com.gkatzioura.maven.cloud</groupId>
-      <version>${cloud-storage-core.version}</version>
-    </dependency>
-    <dependency>
       <artifactId>commons-io</artifactId>
       <groupId>commons-io</groupId>
       <version>${commons-io.version}</version>
@@ -189,7 +184,6 @@
 
   <properties>
     <aws.version>1.11.743</aws.version>
-    <cloud-storage-core.version>2.1</cloud-storage-core.version>
     <commons-io.version>2.7</commons-io.version>
     <httpcore>4.4.10</httpcore>
     <junit.version>4.12</junit.version>
