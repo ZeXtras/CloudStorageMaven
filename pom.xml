@@ -186,7 +186,7 @@
     <aws.version>1.11.743</aws.version>
     <commons-io.version>2.7</commons-io.version>
     <httpcore>4.4.10</httpcore>
-    <junit.version>4.12</junit.version>
+    <junit.version>4.13.1</junit.version>
     <logback.version>1.2.3</logback.version>
     <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
     <maven-javadoc-plugin.version>3.2.0</maven-javadoc-plugin.version>
