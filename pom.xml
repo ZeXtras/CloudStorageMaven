@@ -64,12 +64,6 @@
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
         <version>${maven-surefire-plugin.version}</version>
-        <!--        <configuration>-->
-        <!--          &lt;!&ndash; Tests that require an S3 setup with creadentials&ndash;&gt;-->
-        <!--          <excludes>-->
-        <!--            <exclude>**/S3StorageWagonTest.*</exclude>-->
-        <!--          </excludes>-->
-        <!--        </configuration>-->
       </plugin>
     </plugins>
   </build>
