@@ -190,7 +190,7 @@
   <properties>
     <aws.version>1.11.743</aws.version>
     <cloud-storage-core.version>2.1</cloud-storage-core.version>
-    <commons-io.version>2.6</commons-io.version>
+    <commons-io.version>2.7</commons-io.version>
     <httpcore>4.4.10</httpcore>
     <junit.version>4.12</junit.version>
     <logback.version>1.2.3</logback.version>
