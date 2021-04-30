@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <groupId>com.zextras.maven</groupId>
   <artifactId>s3storage</artifactId>
+  <description>The project enables you to use the AWS S3 storage as maven repositories.</description>
+  <modelVersion>4.0.0</modelVersion>
+  <name>S3 storage</name>
+  <packaging>maven-plugin</packaging>
+  <version>2.4-SNAPSHOT</version>
+  <url>https://github.com/ZeXtras/maven-s3-storage</url>
 
   <build>
     <plugins>
@@ -136,7 +144,7 @@
       <version>${wagon.version}</version>
     </dependency>
   </dependencies>
-  <description>The project enables you to use the AWS S3 storage as maven repositories.</description>
+
   <developers>
     <developer>
       <email>emmanouil@gmail.com</email>
@@ -170,7 +178,7 @@
       <url>s3://zextras-public-repositories/maven/snapshot</url>
     </snapshotRepository>
   </distributionManagement>
-  <groupId>com.zextras.maven</groupId>
+
   <licenses>
     <license>
       <distribution>repo</distribution>
@@ -178,12 +186,6 @@
       <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
     </license>
   </licenses>
-
-  <modelVersion>4.0.0</modelVersion>
-
-  <name>S3 storage</name>
-
-  <packaging>maven-plugin</packaging>
 
   <properties>
     <aws.version>1.11.743</aws.version>
@@ -212,7 +214,4 @@
     <url>https://github.com/ZeXtras/maven-s3-storage</url>
   </scm>
 
-  <url>https://github.com/ZeXtras/maven-s3-storage</url>
-
-  <version>2.4-SNAPSHOT</version>
 </project>
