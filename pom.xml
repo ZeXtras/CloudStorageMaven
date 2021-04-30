@@ -8,7 +8,7 @@
   <modelVersion>4.0.0</modelVersion>
   <name>S3 storage</name>
   <packaging>maven-plugin</packaging>
-  <version>2.4-SNAPSHOT</version>
+  <version>3.0</version>
   <url>https://github.com/ZeXtras/maven-s3-storage</url>
 
   <build>
