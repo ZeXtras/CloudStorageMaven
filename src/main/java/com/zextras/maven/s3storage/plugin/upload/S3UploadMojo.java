@@ -102,17 +102,19 @@ public class S3UploadMojo extends AbstractMojo {
             keyUpload(amazonS3, keyIfNull(), new File(path));
         }
     }
-
-    private void keyUpload(AmazonS3 amazonS3, String keyName, File file) throws MojoExecutionException {
-        try (InputStream inputStream = new FileInputStream(file)) {
-            ObjectMetadata objectMetadata = new ObjectMetadata();
-            objectMetadata.setContentLength(file.length());
-
-            PutObjectRequest putObjectRequest = new PutObjectRequest(bucket, keyName, inputStream, objectMetadata);
-            amazonS3.putObject(putObjectRequest);
-        } catch (IOException e) {
-            throw new MojoExecutionException("Failed to upload mojo",e);
-        }
+    /**
+     * Uploads the given file to the path given by {@code keyName} on the configured {@link #bucket}. Note that the
+     * ObjectMetadata objectMetadata = new ObjectMetadata(); content-length and content-type of the uploaded file will
+     * be inferred by the AWS SDK's implementation.
+     *
+     * @param amazonS3 the API object to use for the upload
+     * @param keyName  the path in the bucket where the given file will be stored at
+     * @param file     the file to upload
+     * @see AmazonS3#putObject(String, String, File)
+     */
+    private void keyUpload(AmazonS3 amazonS3, String keyName, File file) {
+        PutObjectRequest putObjectRequest = new PutObjectRequest(bucket, keyName, file);
+        amazonS3.putObject(putObjectRequest);
     }
 
     private List<String> findFilesToUpload(String filePath) {
