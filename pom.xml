@@ -184,7 +184,7 @@
 
   <properties>
     <aws.version>1.11.743</aws.version>
-    <commons-io.version>2.7</commons-io.version>
+    <commons-io.version>2.14.0</commons-io.version>
     <httpcore>4.4.10</httpcore>
     <junit.version>4.13.1</junit.version>
     <logback.version>1.2.3</logback.version>
